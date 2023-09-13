@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "jest": "^29.6.4",
+    "playwright": "^1.37.1"
+  }
+}
