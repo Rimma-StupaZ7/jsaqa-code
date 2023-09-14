@@ -48,4 +48,7 @@ test("Неуспешная авторизация", async ({ page }) => {
   await page.click('[data-testid="login-submit-btn"]');
   // Click [data-testid="login-error-hint"]
   await page.click('[data-testid="login-error-hint"]');
+  await expect(page.locator('[data-testid="login-error-hint"]')).toContainText(
+    "Вы ввели неправильно логин или пароль"
+  );
 });
